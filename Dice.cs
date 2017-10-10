@@ -17,5 +17,9 @@ namespace Tools
         public int RollD6(int count) {
             return Roll(count, 6);
         }
+
+        public int RollD8(int count) {
+            return Roll(count, 8);
+        }
     }
 }
