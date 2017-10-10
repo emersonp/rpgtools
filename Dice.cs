@@ -13,5 +13,9 @@ namespace Tools
             }
             return total;
         }
+
+        public int RollD6(int count) {
+            return Roll(count, 6);
+        }
     }
 }
