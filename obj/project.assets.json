@@ -177,28 +177,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\parker00.HQ\\.nuget\\packages\\": {},
+    "C:\\Users\\Parker\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\parker00\\Dropbox\\Coding\\dotnet\\tools\\tools.csproj",
+      "projectUniqueName": "c:\\Users\\Parker\\Documents\\Coding\\dotnet\\tools\\tools.csproj",
       "projectName": "tools",
-      "projectPath": "c:\\Users\\parker00\\Dropbox\\Coding\\dotnet\\tools\\tools.csproj",
-      "packagesPath": "C:\\Users\\parker00.HQ\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\parker00\\Dropbox\\Coding\\dotnet\\tools\\obj\\",
+      "projectPath": "c:\\Users\\Parker\\Documents\\Coding\\dotnet\\tools\\tools.csproj",
+      "packagesPath": "C:\\Users\\Parker\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Parker\\Documents\\Coding\\dotnet\\tools\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\parker00.HQ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Parker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
