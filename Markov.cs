@@ -15,19 +15,19 @@ namespace Tools {
 
         public Dictionary<Chain, int> FullSet = new Dictionary<Chain, int>();
 
-        static void Main() {
-            MarkovChain chain = new MarkovChain(2);
-            List<string> words = new List<string>() {
-                "frank",
-                "frimble",
-                "beans"
-            };
-            chain.ConvertWords(words);
-            // foreach(KeyValuePair<Chain, int> entry in chain.FullSet) {
-            //     Console.WriteLine("Symbol: {0}; Prefix: {1}; Frequency: {2}", entry.Key.symbol, string.Join("", entry.Key.prefix.ToArray()), entry.Value);
-            // }
-            Console.WriteLine(chain.Generate());
-        }
+        // static void Main() {
+        //     MarkovChain chain = new MarkovChain(2);
+        //     List<string> words = new List<string>() {
+        //         "frank",
+        //         "frimble",
+        //         "beans"
+        //     };
+        //     chain.ConvertWords(words);
+        //     // foreach(KeyValuePair<Chain, int> entry in chain.FullSet) {
+        //     //     Console.WriteLine("Symbol: {0}; Prefix: {1}; Frequency: {2}", entry.Key.symbol, string.Join("", entry.Key.prefix.ToArray()), entry.Value);
+        //     // }
+        //     Console.WriteLine(chain.Generate());
+        // }
 
         // Converts a word to chains and adds them to FullSet
         public void AddChainToSet(Chain chain){
