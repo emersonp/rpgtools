@@ -19,10 +19,9 @@ namespace Tools
         public int Roll(string regex) {
             Match match = Regex.Match(regex, @"^(\d*)d(\d+)([\+\-]*)(\d*)");
             if (match.Success) {
-                int rolled, group1;
+                int rolled, group1, group4;
                 int group2 = Int32.Parse(match.Groups[2].Value);
                 string group3 = match.Groups[3].Value;
-                int group4 = Int32.Parse(match.Groups[4].Value);
 
                 // If there's a number before the 'd', otherwise just 1d
                 if (Int32.TryParse(match.Groups[1].Value, out group1)) {
@@ -31,11 +30,13 @@ namespace Tools
                     rolled = Roll(1, group2);
                 }
                 // Parse supplementary addition/subtraction
-                if (group3 == "+" && group4 > 0) {
-                    rolled += group4;
-                }
-                if (group3 == "-" && group4 > 0) {
-                    rolled -= group4;
+                if (Int32.TryParse(match.Groups[4].Value, out group4)) {
+                    if (group3 == "+" && group4 > 0) {
+                        rolled += group4;
+                    }
+                    if (group3 == "-" && group4 > 0) {
+                        rolled -= group4;
+                    }
                 }
                 return rolled;
             }
