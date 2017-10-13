@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace Tools
@@ -43,6 +44,10 @@ namespace Tools
             // If no match, just return 0
             // TODO: Maybe better error handling?
             return 0;
+        }
+
+        public string Sample(List<string> list) {
+            return list[rnd.Next(list.Count)];
         }
     }
 }
