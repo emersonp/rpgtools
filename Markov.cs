@@ -71,7 +71,6 @@ namespace Tools {
                 prefix.Add(' ');
             }
             var tempChain = new Chain('f', prefix.ConvertAll(l => l));
-            //Console.WriteLine("Equal? {0}", tempChain.prefix == prefix);
             do {
                 // Build prefix pool
                 var availablePrefixes = FullSet.Where(e => e.Key.prefix.SequenceEqual(prefix));
@@ -85,7 +84,6 @@ namespace Tools {
                 word.Add(next);
                 prefix.Add(next);
                 prefix.RemoveAt(0);
-                Console.WriteLine("Next: {0}", next);
             } while(next != ' ');
 
             word.RemoveAt(word.Count - 1);
